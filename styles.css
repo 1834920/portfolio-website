@@ -1,0 +1,112 @@
+* {
+    font-family: arial, sans-serif;
+    color: rgb(58, 53, 53); 
+
+}
+nav {
+    display: flex;
+    background-color: rgb(238, 238, 146);
+}
+
+.navigation-items, .skills-list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navigation-item {
+    padding: 5px;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+    flex-direction: column;
+}
+h1 {
+    font-size: 1.5rem;
+    padding: 1%;
+}
+#myAvatar {
+    width: 100px; 
+    border-radius: 15px;
+    display: inline-flex;
+    text-align: right; 
+    flex-shrink: 0;
+}
+}
+
+.about-me-container {
+    display: flex;
+    padding: 2%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3%;
+
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 3%;
+}
+#about-me {
+    background-color: rgb(147, 229, 195);
+}
+
+#myAvatar {
+    width: 300px; 
+    height: 300px;
+    border-radius: 15px;
+    display: inline-flex;
+    text-align: right; 
+    flex-shrink: 0;
+}
+
+#skills {
+    background-color: rgb(218, 162, 183);
+}
+
+#skills-container, .contact-container, #projects-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding: 2%;
+}
+
+#projects {
+    background-color: rgb(56, 30, 30);
+    
+}
+
+#projects h2 {
+    color: white;
+}
+
+
+
+#contact {
+    background-color: rgb(231, 231, 187);
+}
+
+.project-image {
+    width: 200px;
+    padding: 3%;
+    display: inline-flex;
+    align-items: top;
+
+}

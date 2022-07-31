@@ -3,6 +3,13 @@
     color: rgb(58, 53, 53); 
 
 }
+
+header {
+    position: fixed;
+    width: 900px;
+    top: 0;
+}
+
 nav {
     display: flex;
     background-color: rgb(238, 238, 146);
@@ -23,14 +30,19 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin-top: 140px;
+}
+
 h1 {
     font-size: 2rem;
     padding: 3%;
 }
 
 @media only screen and (max-width: 600px) {
-    .about-me-container {
+    .about-me-container, #projects-container {
     flex-direction: column;
+    
 }
 h1 {
     font-size: 1.5rem;
@@ -42,6 +54,9 @@ h1 {
     display: inline-flex;
     text-align: right; 
     flex-shrink: 0;
+}
+main {
+    margin-top: 80px;
 }
 }
 
@@ -86,6 +101,8 @@ p {
     flex-wrap: wrap;
     font-size: 2rem;
     padding: 2%;
+    align-items: top;
+
 }
 
 #projects {
@@ -104,9 +121,8 @@ p {
 }
 
 .project-image {
-    width: 200px;
+    width: 250px;
     padding: 3%;
     display: inline-flex;
-    align-items: top;
 
 }
